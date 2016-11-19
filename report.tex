@@ -14,6 +14,7 @@
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \usepackage{amsmath}
+\usepackage[numbib,nottoc]{tocbibind}
 
 % Hifenização
 \usepackage[brazil]{babel}
@@ -47,6 +48,8 @@
 \maketitle
 \thispagestyle{fancy}
 
+\nocite{*}
+
 \input{sumario_executivo}
 \input{analise_mercado}
 \input{plano_de_gestao}
@@ -54,6 +57,8 @@
 \input{plano_operacional}
 \input{plano_financeiro}
 \input{conclusao}
-\input{referencia_bibliografica}
+
+\bibliographystyle{unsrtnat}
+\bibliography{reflist}
 
 \end{document}
